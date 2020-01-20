@@ -11,7 +11,7 @@ func main() {
 	engine := gin.Default()
 
 	// configuration for static files and templates
-	engine.LoadHTMLGlob("templates/*.html")
+	engine.LoadHTMLFiles("templates/index.html")
 	engine.StaticFile("/favicon.ico", "favicon.ico")
 
 	engine.GET("/", func(c *gin.Context) {
