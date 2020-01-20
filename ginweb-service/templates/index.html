@@ -6,8 +6,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/JavaScript">
         $(document).ready(function(){
-            $.getJSON( "/gins", function( data ) {
-                $("#content").html(data)
+            $.getJSON( "/api/gins", function( data ) {
+                $("#gins").html(data)
              });
          });
     </script>
@@ -15,7 +15,9 @@
 
 <body>
     <div id="header"><h1>{{ .title }}</h1></div>
-    <div id="content"></div>
+    <div id="gins">
+        
+    </div>
 </body>
 
 </html>
